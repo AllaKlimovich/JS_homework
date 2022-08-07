@@ -93,3 +93,14 @@ console.log("Количество лет =",year);
 console.log("Переплата по кредиту составит",Pereplata,'руб.');
 
 //задание 8
+
+{
+let a = 8,
+    b = 3,
+    x = b + ((16 - a) / 2),
+    x1 = (a - 15 * b) / (b - 6);
+    x2 = 23780 / (1 + 2 + a + b),
+console.log(x);
+console.log(parseInt(x1));
+console.log(x2);
+}
