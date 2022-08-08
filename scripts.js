@@ -64,7 +64,7 @@ if (a > 2 && a < 11) {
 } else {
     console.log('Неверно')
 }
-*/
+
 //Задание 7
 console.log('Задание 7');
 
@@ -82,3 +82,96 @@ if (n >= 0 && n < 15) {
 } else {
     console.log('Пошел следующий час');
     console.log('В часе 60 минут!');}
+
+
+//Задание 8
+console.log('Задание 8');
+
+let day = prompt('Укажите число месяца');
+
+if (day >= 1 && day <= 10) {
+        document.write('<h4> Это число попадает в первую декаду месяца.</h4>');
+} else if (day >= 11 && day <= 20) {
+        document.write('<h4> Это число попадает во вторую декаду месяца.</h4>');
+} else if (day >= 21 && day <= 31) {
+        document.write('<h4> Это число попадает в третью декаду месяца.</h4>');
+} else {document.write('<h1> ОШИБКА. Укажите число от 1 до 31</h1>');
+}
+*/
+
+// Задание 9
+console.log('Задание 9');
+
+//Задание 10
+console.log('Задание 10');
+
+let mounth = 0,
+    dayYear = prompt('Введите день года');
+
+if (dayYear >= 1 && dayYear <= 31) {
+    document.write('<h2> Это день ЯНВАРЯ.</h2>');
+    mounth = 1;
+    //console.log(mounth);
+} else if (dayYear >= 32 && dayYear <= 59) {
+    document.write('<h2> Это день ФЕВРАЛЯ.</h2>');
+    mounth = 2;
+} else if (dayYear >= 60 && dayYear <= 90) {
+    document.write('<h2> Это день МАРТА.</h2>');
+    mounth = 3;
+} else if (dayYear >= 91 && dayYear <= 120) {
+    document.write('<h2> Это день АПРЕЛЯ.</h2>');
+    mounth = 4;
+} else if (dayYear >= 121 && dayYear <= 151) {
+    document.write('<h2> Это день МАЯ.</h2>');
+    mounth = 5;    
+} else if (dayYear >= 152 && dayYear <= 181) {
+    document.write('<h2> Это день ИЮНЯ.</h2>');
+    mounth = 6;
+} else if (dayYear >= 182 && dayYear <= 212) {
+    document.write('<h2> Это день ИЮЛЯ.</h2>');
+    mounth = 7;
+} else if (dayYear >= 213 && dayYear <= 243) {
+    document.write('<h2> Это день АВГУСТА.</h2>');
+    mounth = 8;
+} else if (dayYear >= 244 && dayYear <= 273) {
+    document.write('<h2> Это день СЕНТЯБРЯ.</h2>');
+    mounth = 9
+} else if (dayYear >= 274 && dayYear <= 304) {
+    document.write('<h2> Это день ОКТЯБРЯ.</h2>');
+    mounth = 10;
+} else if (dayYear >= 305 && dayYear <= 334) {
+    document.write('<h2> Это день НОЯБРЯ.</h2>');
+    mounth = 11;
+} else if (dayYear >= 335 && dayYear <= 365) {
+    document.write('<h2> Это день ДЕКАБРЯ.</h2>');
+    mounth = 12;
+} else {
+    document.write('<h2> ОШИБКА. Укажите день от 1 до 365.</h2>');
+}
+
+switch (mounth) {
+    case 1:
+    case 2:
+    case 12:
+        document.write('<b>З И М А.</b>');
+    break;  
+
+    case 3:
+    case 4:
+    case 5:
+        document.write('<b>В Е С Н А.</b>');
+    break;
+
+    case 6:
+    case 7:
+    case 8:
+        document.write('<b>Л Е Т О.</b>');
+    break;
+
+    case 9:
+    case 10:
+    case 11:
+        document.write('<b>О С Е Н Ь.</b>');
+    break;
+}
+
