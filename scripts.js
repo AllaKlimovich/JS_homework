@@ -102,7 +102,48 @@ if (day >= 1 && day <= 10) {
 // Задание 9
 console.log('Задание 9');
 
-//Задание 10
+let z = prompt('Введите число');
+if (z <= 0) {
+    console.log('ОШИБКА!');
+} else if (z < 365) {
+    console.log('Меньше года');
+} else { 
+    let year = z / 365;
+    console.log ('Это лет: ' + year );
+}
+
+if (z < 31){
+    console.log('Меньше месяца');
+} else { 
+    let month = z / 31;
+    console.log ('Это месяцев: ' + month);
+}
+
+if (z < 7){
+    console.log('Меньше недели');
+} else { 
+    var week = z / 7;
+    console.log ('Это недель: ' + week);
+}
+
+if (week < 7){
+    console.log('Меньше дня');
+} else { 
+    var day1 = week * 7;
+    console.log ('Это дней: ' + day1);
+}
+
+if (day1 < 0.6){
+    console.log('Меньше часа');
+} else { 
+    let hour = day1 * 24;
+    console.log ('Это часов: ' + hour);
+}
+
+//    minute
+//    second
+
+/*/Задание 10
 console.log('Задание 10');
 
 let mounth = 0,
@@ -173,5 +214,4 @@ switch (mounth) {
     case 11:
         document.write('<b>О С Е Н Ь.</b>');
     break;
-}
-
+}*/
