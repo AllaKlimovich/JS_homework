@@ -103,47 +103,54 @@ if (day >= 1 && day <= 10) {
 console.log('Задание 9');
 
 let z = prompt('Введите число');
-if (z <= 0) {
+    
+let year = 0,
+    month = 0,
+    week = 0,
+    day1 = 0,
+    hour = 0,
+    minute = 0,
+    second = 0;
+
+if (z < 1) {
     console.log('ОШИБКА!');
-} else if (z < 365) {
-    console.log('Меньше года');
-} else { 
-    let year = z / 365;
-    console.log ('Это лет: ' + year );
-}
-
-if (z < 31){
-    console.log('Меньше месяца');
-} else { 
-    let month = z / 31;
-    console.log ('Это месяцев: ' + month);
-}
-
-if (z < 7){
-    console.log('Меньше недели');
-} else { 
-    var week = z / 7;
-    console.log ('Это недель: ' + week);
-}
-
-if (week < 7){
-    console.log('Меньше дня');
-} else { 
-    var day1 = week * 7;
-    console.log ('Это дней: ' + day1);
-}
-
-if (day1 < 0.6){
-    console.log('Меньше часа');
-} else { 
-    let hour = day1 * 24;
+} else {
+    if (z < 365) {
+        console.log('Меньше года');
+    } else { 
+        year = z / 365;
+        console.log ('Это лет: ' + year );
+    }
+    if (z < 31){
+        console.log('Меньше месяца');
+    } else { 
+        month = z / 31;
+        console.log ('Это месяцев: ' + month);
+    }
+    if (z < 7){
+        console.log('Меньше недели');
+    } else { 
+        week = z / 7;
+        console.log ('Это недель: ' + week);
+    }
+    if (z < 1){
+        console.log('Меньше дня');
+    } else { 
+        day1 = z;
+        console.log ('Это дней: ' + day1);
+    }
+    
+    hour = day1 * 24;
     console.log ('Это часов: ' + hour);
+
+    minute = hour * 60;
+    console.log ('Это минут: ' + minute);
+
+    second = minute * 60;
+    console.log ('Это секунд: ' + second);
 }
-
-//    minute
-//    second
-
-/*/Задание 10
+/*
+/Задание 10
 console.log('Задание 10');
 
 let mounth = 0,
