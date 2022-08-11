@@ -32,16 +32,16 @@ do {
     sum = sum + a;
     console.log('Сумма числа = '+ sum);
     a ++;
-}  while (a <= 100);*/
-
+}  while (a <= 100);
+*/
 //Задание 4
 console.log('Задание 4');
-let s = 1,
+let s = 5,
     sum1 = 0;
 
-do {
-    console.log(s);
-    sum1 = sum1 + s;
-    console.log('Сумма числа = '+ sum1);
-    s ++;
-}  while (s <= 5);
+for (let i =1; i <=s; i++) {
+    sum1 = 0;
+    for (let y = 1; y <= i; y++){
+        sum1 += y;}
+    console.log('Сумма числа ' + i + ' = '+ sum1);
+}
