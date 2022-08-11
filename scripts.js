@@ -67,7 +67,7 @@ while (i <= 56) {
     console.log(i);
     i ++;
 }
-}*/
+}
 
 //Задание 6
 console.log('Задание 6');
@@ -81,3 +81,21 @@ for (let i = 2; i <= 10; i ++) {
     }
     console.log('*****');
 }
+*/
+//Задание 7
+console.log('Задание 7');
+ let n = 1000,
+     rez = 0,
+     num = 0;
+     i = 0;
+
+while (n > 50) {
+    rez = (n / 2);
+    num = ++ i;
+    
+    n = rez;
+    rez = 0;
+}
+
+console.log('количесво итераций = '+num);
+console.log('получилось число = )))'+n);
