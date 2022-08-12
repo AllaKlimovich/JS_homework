@@ -81,7 +81,7 @@ for (let i = 2; i <= 10; i ++) {
     }
     console.log('*****');
 }
-*/
+
 //Задание 7
 console.log('Задание 7');
  let n = 1000,
@@ -98,4 +98,47 @@ while (n > 50) {
 }
 
 console.log('количесво итераций = '+num);
-console.log('получилось число = )))'+n);
+console.log('получилось число = '+n);
+
+
+//Задание 8
+console.log('Задание 8');
+let sum = 0,
+    sred = 0;
+
+for (i = 1; ;i ++){
+    let str = prompt('Введите число');
+        if (str === '' || str == 0 || str == null) break;
+        
+        if (isNaN(str)) {
+        alert('Ошибка ввода');
+        continue; 
+        }
+
+    sum += +str;
+    sred = sum / i;
+        
+    console.log(sum);
+    console.log(sred);
+} */
+
+//Задание 9
+console.log('Задание 9');
+
+let str = '4 98 4 6 1 32 4 65 4 3 5 7 89 7 10 1 36',
+    min = Infinity,
+    max = -Infinity,
+    i = 0;
+    bufer = '';
+
+do {
+    if (str[i] !== '') bufer += str[i];
+    
+    if (bufer > max) bufer = max;
+    if (bufer < min) bufer = min;
+    i ++;
+} while (i < str.length)
+
+
+console.log(`max: ${max}
+             min: ${min}`);
