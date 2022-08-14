@@ -120,25 +120,49 @@ for (i = 1; ;i ++){
         
     console.log(sum);
     console.log(sred);
-} */
+} 
 
 //Задание 9
 console.log('Задание 9');
 
-let str = '4 98 4 6 1 32 4 65 4 3 5 7 89 7 10 1 36',
+let str = '4 98 -4 6 1 232 4 65 4 3 5 7 89 7 10 1 36',
     min = Infinity,
     max = -Infinity,
     i = 0;
     bufer = '';
 
 do {
-    if (str[i] !== '') bufer += str[i];
+    bufer += str[i];
+    if (str[i] === ' ') {
     
-    if (bufer > max) bufer = max;
-    if (bufer < min) bufer = min;
+    bufer = +bufer;
+    if (bufer > max) max = bufer;
+    if (bufer < min) min = bufer;
+    bufer = '';
+    }
     i ++;
+    
 } while (i < str.length)
 
 
 console.log(`max: ${max}
-             min: ${min}`);
+min: ${min}`);*/
+
+//Задание 10
+console.log('Задание 10');
+
+let a = prompt(),
+    count = 0,
+    sum = 0,
+    reverse = '';
+
+for (let i = 0; i < a.length; i++){
+    count++;
+    sum += Number(a[i]);
+    reverse = a[i] + reverse; // 1-я итерация: 1 + '', 2-я итерация: 2 + '1' => '21' 3-я итерация: 3 + '21' => '321'
+}
+
+console.log(`Число: ${a},
+Количество: ${count},
+Сумма: ${sum},
+Перевернутое число: ${reverse}`);
