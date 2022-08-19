@@ -72,19 +72,54 @@
 
 // Arr([1, 5, 'true', 15 -65]);
 
-var array = [];
-function Arr1(a, b){
+// var array = [];
+// function Arr1(a, b){
   
-  for (var i = a; i<= b; i++){
-    array.push(i);
+//   for (var i = a; i<= b; i++){
+//     array.push(i);
+//   }
+//   //console.log(array);
+// }
+
+// function exportArr() {
+//   for (var i = 0; i< arguments.length;i++){
+//     console.log(arguments[i]);
+//   }
+// }
+
+// Arr1(-15, 18); exportArr(array);
+
+/*Задание 5 Сделайте функцию isEven() (even - это четный), которая параметром
+принимает целое число и проверяет: четное оно или нет. Если четное - пусть
+функция возвращает true, если нечетное — false.*/
+
+function isEven (even) {
+  if (even % 2 == 0) {
+    return true;
+  } else { 
+    return false;
   }
-  //console.log(array);
 }
 
-function exportArr() {
-  for (var i = 0; i< arguments.length;i++){
-    console.log(arguments[i]);
-  }
-}
+//console.log(isEven(-4));
 
-Arr1(-15, 18); exportArr(array);
+/*Задание 6 Напишите ф-цию, в которую передается массив с целыми числами.
+Верните новый массив, где останутся лежать только четные из этих чисел.
+Для этого используйте вспомогательную функцию isEven из предыдущей
+задачи.*/
+
+function Arr2 (array) {
+  console.log(array);
+  var Arr3 = [],
+      srav;
+  for (var i = 0; i < array.length ;i++) {
+    if (isEven(array[i]) = true) {
+    
+      console.log(Arr3.push(i));
+    
+    }
+  }
+
+
+}
+Arr2([5, 4, 3, 6, 2, 10])
